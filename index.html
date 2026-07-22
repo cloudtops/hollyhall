@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Holly Hall — 421 2nd St W, Kirkland, WA | Val Burmester, Sotheby's International Realty</title>
-<meta name="description" content="Holly Hall — a residence in the heart of downtown Kirkland, Washington. Offered through Val Burmester, Sotheby's International Realty, Kirkland.">
+<title>Holly Hall, 421 2nd St W, Kirkland, WA | Val Burmester, Sotheby's International Realty</title>
+<meta name="description" content="Holly Hall: a residence in the heart of downtown Kirkland, Washington. Offered through Val Burmester, Sotheby's International Realty, Kirkland.">
 
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Holly Hall — 421 2nd St W, Kirkland, WA">
+<meta property="og:title" content="Holly Hall, 421 2nd St W, Kirkland, WA">
 <meta property="og:description" content="A residence in the heart of downtown Kirkland. Offered through Val Burmester, Sotheby's International Realty, Kirkland.">
 <meta property="og:image" content="/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Holly Hall — 421 2nd St W, Kirkland, WA">
+<meta name="twitter:title" content="Holly Hall, 421 2nd St W, Kirkland, WA">
 <meta name="twitter:image" content="/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,6 +68,8 @@
     font-family:'Public Sans',sans-serif; font-size:0.68rem;
     color:var(--ivory-2); opacity:0.55;
   }
+  .fpo img{width:100%; height:100%; object-fit:cover; display:block;}
+  .hero-img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;}
 
   /* ---------- NAV ---------- */
   nav{
@@ -121,6 +123,17 @@
   .intro-body{margin-top:50px; display:grid; grid-template-columns:repeat(3,1fr); gap:44px;}
   .intro-body p{font-size:0.98rem; line-height:1.85; color:#26291f;}
   @media (max-width:860px){.intro-body{grid-template-columns:1fr; gap:28px;} .intro-statement{padding:70px 0 80px;}}
+
+  /* ---------- PROVENANCE (architect's rendering + award) ---------- */
+  .provenance{background:var(--ivory-2); padding:110px 0 120px; border-top:1px solid var(--line-l); border-bottom:1px solid var(--line-l);}
+  .prov-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:70px; align-items:start;}
+  @media (max-width:860px){.prov-grid{grid-template-columns:1fr; gap:40px;} .provenance{padding:80px 0 90px;}}
+  .provenance h2{font-size:clamp(1.7rem,3vw,2.3rem); margin:14px 0 24px; font-weight:500; max-width:20ch;}
+  .provenance p{font-size:0.98rem; line-height:1.9; color:#26291f; max-width:60ch;}
+  .prov-stair{margin-top:34px; display:flex; gap:18px; align-items:flex-start; max-width:60ch;}
+  .prov-stair img{width:150px; height:112px; object-fit:cover; border:1px solid var(--line-l); flex-shrink:0;}
+  .prov-stair-cap{font-size:0.86rem; color:var(--stone); line-height:1.7; padding-top:4px;}
+  .prov-stair-cap .plate-num{display:block; color:var(--brass); font-style:italic; font-family:'Lora',serif; margin-bottom:4px;}
 
   /* ---------- GALLERY as botanical PLATES ---------- */
   .gallery{background:var(--ivory); padding:110px 0 120px;}
@@ -229,6 +242,7 @@
   </div>
   <div class="nav-links">
     <a href="#residence">The Residence</a>
+    <a href="#design">Design</a>
     <a href="#gallery">Gallery</a>
     <a href="#particulars">Particulars</a>
     <a href="#neighborhood">Neighborhood</a>
@@ -237,16 +251,15 @@
 </nav>
 
 <!-- ================= HERO ================= -->
-<section class="hero fpo">
-  <span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span>
-  <span class="fpo-tag">FPO — hero photography pending · 2400 × 1500</span>
+<section class="hero">
+  <img class="hero-img" src="images/exterior-street.jpg" alt="Holly Hall, street elevation, 421 2nd St W, Kirkland">
   <div class="hero-fade"></div>
   <div class="hero-content">
     <div class="label reveal">Downtown Kirkland, Washington</div>
     <h1 class="reveal">A residence in the heart of downtown Kirkland.</h1>
     <div class="hero-sub reveal">
-      <div class="hero-price">$[Placeholder]</div>
-      <div class="hero-loc">421 2nd St W, Kirkland, WA 98033 · offered exclusively through Val Burmester, Sotheby&rsquo;s International Realty — Kirkland</div>
+      <div class="hero-price">$4,300,000</div>
+      <div class="hero-loc">421 2nd St W, Kirkland, WA 98033 · offered exclusively through Val Burmester, Sotheby&rsquo;s International Realty, Kirkland</div>
     </div>
   </div>
 </section>
@@ -255,14 +268,33 @@
 <section class="intro" id="residence">
   <div class="wrap intro-top">
     <div class="label">The Residence</div>
-    <div class="stamp reveal">Draft — pending copy &amp; photography</div>
+    <div class="stamp reveal">Offered for the first time in over a decade</div>
   </div>
   <div class="wrap intro-statement">
-    <h2 class="reveal">[Placeholder] A statement establishing the residence's character — architecture, setting, and the walkable downtown Kirkland address that sets it apart.</h2>
+    <h2 class="reveal">A craftsman residence beside Heritage Park, moments from downtown Kirkland, with views across Lake Washington to two city skylines.</h2>
     <div class="intro-body">
-      <div class="reveal"><p>[Placeholder] A paragraph on the residence itself — square footage, architecture, the feeling on arrival. Replace with copy from Val's listing notes.</p></div>
-      <div class="reveal"><p>[Placeholder] A paragraph on the setting — proximity to downtown Kirkland's waterfront, restaurants, and Lake Washington.</p></div>
-      <div class="reveal"><p>[Placeholder] A closing line on scarcity and provenance — why this address won't repeat itself.</p></div>
+      <div class="reveal"><p>Built in 2002 in the Pacific Northwest craftsman tradition, Holly Hall unfolds across 3,580 square feet with four bedrooms and three and a half baths. A two-story entry anchored by a cantilevered glass stair and fan-shaped glass bridge, honored with a 2004 BALA Platinum award for Best Detail in a Home, sets the tone for a residence built with uncommon craft throughout.</p></div>
+      <div class="reveal"><p>The home sits just off Heritage Park, with sightlines across the park to Lake Washington and, beyond it, the skylines of Bellevue and Seattle: a westward exposure that fills the upper floors with sunset light. Downtown Kirkland's waterfront, restaurants, and galleries are an easy walk away.</p></div>
+      <div class="reveal"><p>Addresses that pair this degree of walkability with unobstructed lake and skyline views rarely come to market in downtown Kirkland. Holly Hall is offered for the first time in over a decade.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROVENANCE ================= -->
+<section class="provenance" id="design">
+  <div class="wrap prov-grid">
+    <div class="reveal">
+      <div class="plate-frame"><div class="fpo"><img src="images/holly-hall-rendering.jpg" alt="Original pencil rendering of Holly Hall, signed B. Ackworth, 2001"></div></div>
+      <div class="plate-cap"><div class="plate-num">Provenance</div><div class="plate-name">Architect's rendering, 2001</div></div>
+    </div>
+    <div class="reveal">
+      <div class="label">Design &amp; Craftsmanship</div>
+      <h2>A BALA Platinum award for Best Detail in a Home</h2>
+      <p>In January of 2004, this home received a BALA Platinum award for Best Detail in a Home. Spanning the two-story entry that bisects the home, a fan-shaped glass bridge connects the two halves of the upper floor while an open riser stair with cantilevered glass treads connects the upper and lower levels. This design makes a dramatic impact upon entering the home and showcases the inherent duality of glass, a material that is transparent yet solid: transmitting both mass and light. Well crafted, the glass bridge and stair blend well with the craftsman style of the home.</p>
+      <div class="prov-stair">
+        <img src="images/glass-stair.jpg" alt="The cantilevered glass stair and bridge, as built">
+        <div class="prov-stair-cap"><span class="plate-num">As built</span>The open riser stair with cantilevered glass treads, beneath the fan-shaped glass bridge.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -272,28 +304,28 @@
   <div class="wrap">
     <div class="gallery-head reveal">
       <h2>Gallery</h2>
-      <div class="note">Plates hold their intended crop and sequence — final photography to be dropped in ahead of launch.</div>
+      <div class="note">Sequence shown here. Final selects to be confirmed ahead of launch.</div>
     </div>
     <div class="plate-grid">
       <div class="plate reveal">
-        <div class="plate-frame"><div class="fpo"><span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span><span class="fpo-tag">FPO 4:3</span></div></div>
-        <div class="plate-cap"><div class="plate-num">Plate I</div><div class="plate-name">Exterior, street elevation</div></div>
+        <div class="plate-frame"><div class="fpo"><img src="images/great-room.jpg" alt="Great room, Holly Hall"></div></div>
+        <div class="plate-cap"><div class="plate-num">01</div><div class="plate-name">Great room, lake view</div></div>
       </div>
       <div class="plate reveal">
-        <div class="plate-frame"><div class="fpo"><span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span><span class="fpo-tag">FPO 4:3</span></div></div>
-        <div class="plate-cap"><div class="plate-num">Plate II</div><div class="plate-name">Great room</div></div>
+        <div class="plate-frame"><div class="fpo"><img src="images/exterior-street.jpg" alt="Exterior, street elevation, Holly Hall"></div></div>
+        <div class="plate-cap"><div class="plate-num">02</div><div class="plate-name">Exterior, street elevation</div></div>
       </div>
       <div class="plate small reveal">
-        <div class="plate-frame"><div class="fpo"><span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span><span class="fpo-tag">FPO 4:3</span></div></div>
-        <div class="plate-cap"><div class="plate-num">Plate III</div><div class="plate-name">Kitchen</div></div>
+        <div class="plate-frame"><div class="fpo"><img src="images/kitchen.jpg" alt="Kitchen, Holly Hall"></div></div>
+        <div class="plate-cap"><div class="plate-num">03</div><div class="plate-name">Kitchen</div></div>
       </div>
       <div class="plate small reveal">
-        <div class="plate-frame"><div class="fpo"><span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span><span class="fpo-tag">FPO 4:3</span></div></div>
-        <div class="plate-cap"><div class="plate-num">Plate IV</div><div class="plate-name">Primary suite</div></div>
+        <div class="plate-frame"><div class="fpo"><img src="images/living-room.jpg" alt="Living room and fireplace, Holly Hall"></div></div>
+        <div class="plate-cap"><div class="plate-num">04</div><div class="plate-name">Living room &amp; fireplace</div></div>
       </div>
       <div class="plate small reveal">
-        <div class="plate-frame"><div class="fpo"><span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span><span class="fpo-tag">FPO 4:3</span></div></div>
-        <div class="plate-cap"><div class="plate-num">Plate V</div><div class="plate-name">Grounds &amp; garden</div></div>
+        <div class="plate-frame"><div class="fpo"><img src="images/terrace-dusk.jpg" alt="Terrace at dusk, Holly Hall"></div></div>
+        <div class="plate-cap"><div class="plate-num">05</div><div class="plate-name">Terrace at dusk</div></div>
       </div>
     </div>
   </div>
@@ -305,11 +337,11 @@
     <div class="film-inner reveal">
       <div class="fpo" style="position:relative;">
         <span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span>
-        <span class="fpo-tag">FPO — property film pending</span>
+        <span class="fpo-tag">FPO · property film pending</span>
         <div class="film-play"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8V4z"/></svg></div>
       </div>
       <div class="film-cap">
-        <div><div class="plate-num">Plate VI</div><div class="plate-name">Property film</div></div>
+        <div><div class="plate-num">06</div><div class="plate-name">Property film</div></div>
       </div>
     </div>
   </div>
@@ -323,12 +355,13 @@
       <div class="label">421 2nd St W, Kirkland, WA 98033</div>
     </div>
     <div class="ledger reveal">
-      <div class="led-row"><span class="label">Residence</span><span class="dots"></span><span class="val">[Placeholder] sf</span></div>
-      <div class="led-row"><span class="label">Site area</span><span class="dots"></span><span class="val">[Placeholder] ac</span></div>
-      <div class="led-row"><span class="label">Bed / bath</span><span class="dots"></span><span class="val">[Placeholder]</span></div>
-      <div class="led-row"><span class="label">Year built</span><span class="dots"></span><span class="val">[Placeholder]</span></div>
-      <div class="led-row"><span class="label">Garage</span><span class="dots"></span><span class="val">[Placeholder]</span></div>
-      <div class="led-row"><span class="label">Offered at</span><span class="dots"></span><span class="val hi">$[Placeholder]</span></div>
+      <div class="led-row"><span class="label">Residence</span><span class="dots"></span><span class="val">3,580 sf</span></div>
+      <div class="led-row"><span class="label">Site area</span><span class="dots"></span><span class="val">5,500 sf</span></div>
+      <div class="led-row"><span class="label">Bed / bath</span><span class="dots"></span><span class="val">4 / 3.5</span></div>
+      <div class="led-row"><span class="label">Year built</span><span class="dots"></span><span class="val">2002</span></div>
+      <div class="led-row"><span class="label">Garage</span><span class="dots"></span><span class="val">3-car</span></div>
+      <div class="led-row"><span class="label">Awards</span><span class="dots"></span><span class="val">BALA Platinum, 2004 · Best Detail in a Home</span></div>
+      <div class="led-row"><span class="label">Offered at</span><span class="dots"></span><span class="val hi">$4,300,000</span></div>
     </div>
   </div>
 </section>
@@ -338,13 +371,13 @@
   <div class="wrap n-grid">
     <div class="reveal">
       <h2>Downtown Kirkland</h2>
-      <p>[Placeholder] A paragraph on downtown Kirkland — the waterfront park, the restaurant and gallery scene, the walkability that defines the neighborhood.</p>
-      <p>[Placeholder] A paragraph on the commute — proximity to Seattle via the 520 bridge, and the lakeside character that sets Kirkland apart from the rest of the Eastside.</p>
+      <p>Downtown Kirkland is one of the Eastside's most walkable neighborhoods, a compact grid of waterfront parks, independent restaurants, wine bars, and galleries, all within a few blocks of Lake Washington. Heritage Park, just steps from the home, offers open lawn and lake access away from the busier main waterfront.</p>
+      <p>Seattle is roughly twenty minutes away via the SR-520 floating bridge, and Bellevue's business district is closer still. Both skylines are visible from the home's upper floors across the water: a rare combination of lakeside, small-town character with two city skylines in view and easy access to either.</p>
       <div class="n-facts">
-        <div><div class="label">To Seattle</div><div class="val">[Placeholder]</div></div>
-        <div><div class="label">Waterfront Park</div><div class="val">[Placeholder]</div></div>
-        <div><div class="label">Walk Score</div><div class="val">[Placeholder]</div></div>
-        <div><div class="label">School District</div><div class="val">[Placeholder]</div></div>
+        <div><div class="label">To Seattle</div><div class="val">~20–25 min via SR-520</div></div>
+        <div><div class="label">Heritage Park</div><div class="val">Adjacent</div></div>
+        <div><div class="label">Walkability</div><div class="val">Highly walkable</div></div>
+        <div><div class="label">School District</div><div class="val">Lake Washington SD</div></div>
       </div>
     </div>
     <div class="reveal locator">
@@ -375,7 +408,7 @@
       <div class="agent-card">
         <div class="label">Listing Agent</div>
         <div class="agent-name">Val Burmester</div>
-        <div class="agent-firm">Sotheby&rsquo;s International Realty — Kirkland</div>
+        <div class="agent-firm">Sotheby&rsquo;s International Realty, Kirkland</div>
         <div class="agent-contact">
           <span><a href="tel:+14256522335">425-652-2335</a></span>
           <span><a href="mailto:val.burmester@rsir.com">val.burmester@rsir.com</a></span>
@@ -393,7 +426,7 @@
         <button type="submit" class="submit-btn">Submit Inquiry</button>
         <div class="form-note" id="formNote">Set up a Formspree endpoint and update the form action before launch.</div>
       </form>
-      <div class="success-msg" id="successMsg">Thank you — your inquiry has been noted. Val's team will follow up shortly.</div>
+      <div class="success-msg" id="successMsg">Thank you. Your inquiry has been noted, and Val's team will follow up shortly.</div>
     </div>
   </div>
 </section>
@@ -401,7 +434,7 @@
 <footer>
   <div class="wrap footer-row">
     <span>© 2026 Holly Hall</span>
-    <span>Sotheby&rsquo;s International Realty, Kirkland — Equal Housing Opportunity</span>
+    <span>Sotheby&rsquo;s International Realty, Kirkland · Equal Housing Opportunity</span>
   </div>
 </footer>
 
@@ -424,10 +457,10 @@
     try {
       const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
       if (res.ok) { form.style.display = 'none'; success.classList.add('show'); }
-      else { submitBtn.disabled = false; submitBtn.textContent = 'Submit Inquiry'; formNote.textContent = 'Something went wrong sending that — please try again, or reach out by phone/email above.'; }
+      else { submitBtn.disabled = false; submitBtn.textContent = 'Submit Inquiry'; formNote.textContent = 'Something went wrong sending that. Please try again, or reach out by phone/email above.'; }
     } catch (err) {
       submitBtn.disabled = false; submitBtn.textContent = 'Submit Inquiry';
-      formNote.textContent = 'Something went wrong sending that — please try again, or reach out by phone/email above.';
+      formNote.textContent = 'Something went wrong sending that. Please try again, or reach out by phone/email above.';
     }
   });
 </script>
