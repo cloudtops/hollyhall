@@ -97,7 +97,7 @@
   }
   .hero-content{position:relative; z-index:2; padding:0 56px 88px;}
   @media (max-width:760px){.hero-content{padding:0 24px 60px;}}
-  .hero .label{color:#fff; opacity:0.92; margin-bottom:22px; font-style:italic; font-family:'Lora',serif; font-size:0.98rem;}
+  .hero .label{color:#fff; opacity:0.92; margin-bottom:22px; font-style:italic; font-weight:600; font-family:'Lora',serif; font-size:0.98rem;}
   .hero h1{font-size:clamp(2.4rem, 5.4vw, 4.6rem); max-width:16ch; font-weight:500; color:#fff;}
   .hero-sub{
     margin-top:32px; display:flex; align-items:flex-end; gap:52px; flex-wrap:wrap;
@@ -193,6 +193,7 @@
   .locator{border:1px solid var(--line-l); padding:20px; background:#fffdf6;}
   .locator-top{display:flex; justify-content:space-between; font-size:0.78rem; color:var(--stone); margin-bottom:14px;}
   .locator svg{width:100%; height:auto;}
+  .locator img{width:100%; height:auto; display:block;}
 
   /* ---------- INQUIRE ---------- */
   .inquire{background:var(--holly); color:var(--ivory); padding:130px 0 100px;}
@@ -255,7 +256,7 @@
   <img class="hero-img" src="images/Print_03.jpg" alt="Holly Hall, street elevation, 421 2nd St W, Kirkland">
   <div class="hero-fade"></div>
   <div class="hero-content">
-    <div class="label reveal">Downtown Kirkland, Washington</div>
+    <div class="label reveal">West of Market, Kirkland, WA</div>
     <h1 class="reveal">A residence steps from downtown Kirkland.</h1>
     <div class="hero-sub reveal">
       <div class="hero-price">$4,300,000</div>
@@ -381,20 +382,9 @@
       </div>
     </div>
     <div class="reveal locator">
-      <div class="locator-top"><span>Downtown Kirkland</span><span>N ↑</span></div>
-      <svg viewBox="0 0 200 200" fill="none" stroke="#1a1f18" stroke-width="1" opacity="0.55">
-        <line x1="20" y1="30" x2="20" y2="180"/>
-        <line x1="60" y1="20" x2="60" y2="180"/>
-        <line x1="100" y1="20" x2="100" y2="180"/>
-        <line x1="140" y1="20" x2="140" y2="180"/>
-        <line x1="10" y1="50" x2="150" y2="50"/>
-        <line x1="10" y1="90" x2="150" y2="90"/>
-        <line x1="10" y1="130" x2="150" y2="130"/>
-        <path d="M140,20 C170,60 175,120 140,180" stroke="#9c7a35" stroke-width="1.4" opacity="0.8"/>
-        <circle cx="80" cy="90" r="3" fill="#9c7a35" stroke="none"/>
-        <circle cx="80" cy="90" r="9" stroke="#9c7a35" opacity="0.6"/>
-      </svg>
-      <div class="locator-top" style="margin-top:14px; margin-bottom:0;"><span>Lake Washington, east</span><span></span></div>
+      <div class="locator-top"><span>West of Market, Kirkland</span><span>N ↑</span></div>
+      <img src="images/locator-map.jpg" alt="Map showing Holly Hall's location beside Heritage Park, near downtown Kirkland and Lake Washington">
+      <div class="locator-top" style="margin-top:14px; margin-bottom:0;"><span>Lake Washington, west</span><span></span></div>
     </div>
   </div>
 </section>
