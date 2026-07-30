@@ -42,7 +42,7 @@
   ::selection{background:var(--espresso); color:var(--ivory);}
 
   h1,h2,h3{font-family:'Lora',serif; font-weight:500; letter-spacing:-0.005em; line-height:1.08;}
-  .label{font-size:0.82rem; color:var(--stone); font-weight:400;}
+  .label{font-family:'Lora',serif; font-style:italic; font-size:0.86rem; color:var(--stone); font-weight:400; letter-spacing:0.01em;}
   a{color:inherit; text-decoration:none;}
   .wrap{max-width:1220px; margin:0 auto; padding:0 56px;}
   @media (max-width:760px){.wrap{padding:0 24px;}}
@@ -201,6 +201,8 @@
   .inquire p.lead{color:var(--ivory-2); line-height:1.85; max-width:42ch; margin-bottom:46px; font-size:0.98rem;}
   .agent-card{border:1px solid var(--line-d); padding:26px 28px; max-width:400px;}
   .agent-card .label{color:var(--ivory-2); opacity:0.7; margin-bottom:14px;}
+  .agent-card-body{display:flex; align-items:center; gap:18px;}
+  .agent-photo{width:64px; height:64px; border-radius:50%; object-fit:cover; border:1px solid var(--brass-2); flex-shrink:0;}
   .agent-name{font-family:'Lora',serif; font-style:italic; font-size:1.25rem;}
   .agent-firm{font-size:0.85rem; color:var(--ivory-2); margin-top:5px;}
   .agent-contact{margin-top:16px; display:flex; flex-direction:column; gap:6px; font-size:0.85rem; color:var(--ivory-2);}
@@ -328,7 +330,7 @@
 <section class="provenance-note" id="provenance">
   <div class="wrap prov-note-inner">
     <div class="reveal">
-      <div class="plate-frame"><div class="fpo"><img src="images/holly-hall-rendering.jpg" alt="Original pencil rendering of the residence, signed B. Ackworth, 2001"></div></div>
+      <div class="plate-frame"><div class="fpo"><img src="images/holly-hall-rendering-v2.jpg" alt="Original pencil rendering of the residence, signed B. Ackworth, 2001"></div></div>
       <div class="plate-cap"><div class="plate-num">Provenance</div><div class="plate-name">Architect's rendering, 2001</div></div>
     </div>
     <div class="reveal prov-note-text">
@@ -466,11 +468,16 @@
       <p class="lead">Waverly Nest is offered exclusively through Val Burmester. Serious inquiries receive a response within one business day.</p>
       <div class="agent-card">
         <div class="label">Listing Agent</div>
-        <div class="agent-name">Val Burmester</div>
-        <div class="agent-firm">Sotheby&rsquo;s International Realty, Kirkland</div>
-        <div class="agent-contact">
-          <span><a href="tel:+14256522335">425-652-2335</a></span>
-          <span><a href="mailto:val.burmester@rsir.com">val.burmester@rsir.com</a></span>
+        <div class="agent-card-body">
+          <img class="agent-photo" src="images/val.jpeg" alt="Val Burmester, listing agent">
+          <div>
+            <div class="agent-name">Val Burmester</div>
+            <div class="agent-firm">Sotheby&rsquo;s International Realty, Kirkland</div>
+            <div class="agent-contact">
+              <span><a href="tel:+14256522335">425-652-2335</a></span>
+              <span><a href="mailto:val.burmester@rsir.com">val.burmester@rsir.com</a></span>
+            </div>
+          </div>
         </div>
       </div>
       <a class="qr-card" href="https://www.redfin.com/WA/Kirkland/421-2nd-St-W-98033/home/460895" target="_blank" rel="noopener">
