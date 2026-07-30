@@ -23,23 +23,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --holly:#1b3324;
-    --holly-2:#24422f;
-    --holly-deep:#101f16;
+    --espresso:#2b2420;
+    --espresso-2:#3d3428;
+    --espresso-deep:#18140f;
     --ivory:#f4efe1;
     --ivory-2:#e9e1cc;
     --brass:#9c7a35;
     --brass-2:#b8944a;
-    --ink:#1a1f18;
+    --ink:#1f1c18;
     --stone:#6f6c5c;
-    --line-l:rgba(26,31,24,0.15);
+    --line-l:rgba(31,28,24,0.15);
     --line-d:rgba(244,239,225,0.16);
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{background:var(--ivory); color:var(--ink); font-family:'Public Sans',sans-serif; font-weight:400;}
   @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto;} *{animation-duration:.01ms !important; transition-duration:.01ms !important;}}
-  ::selection{background:var(--holly); color:var(--ivory);}
+  ::selection{background:var(--espresso); color:var(--ivory);}
 
   h1,h2,h3{font-family:'Lora',serif; font-weight:500; letter-spacing:-0.005em; line-height:1.08;}
   .label{font-size:0.82rem; color:var(--stone); font-weight:400;}
@@ -54,7 +54,7 @@
   .sprig circle{fill:currentColor; stroke:none;}
 
   /* ---------- FPO placeholder-image convention ---------- */
-  .fpo{position:relative; background:var(--holly-2); overflow:hidden;}
+  .fpo{position:relative; background:var(--espresso-2); overflow:hidden;}
   .fpo .crop{position:absolute; width:14px; height:14px; opacity:0.5;}
   .fpo .crop::before,.fpo .crop::after{content:''; position:absolute; background:var(--ivory-2);}
   .fpo .crop::before{width:14px; height:1px; top:0; left:0;}
@@ -79,21 +79,21 @@
     transition:background .4s ease, padding .4s ease, border-color .4s ease;
     border-bottom:1px solid transparent;
   }
-  nav.scrolled{background:rgba(16,31,22,0.92); backdrop-filter:blur(8px); padding:18px 56px; border-bottom-color:var(--line-d);}
+  nav.scrolled{background:rgba(24,20,15,0.92); backdrop-filter:blur(8px); padding:18px 56px; border-bottom-color:var(--line-d);}
   @media (max-width:760px){nav, nav.scrolled{padding:18px 24px;}}
   .nav-mark{font-family:'Lora',serif; font-style:italic; font-size:1.15rem; display:flex; align-items:center; gap:9px;}
   .nav-links{display:flex; gap:36px; align-items:center;}
   .nav-links a{font-size:0.86rem; opacity:0.82; padding-bottom:2px; border-bottom:1px solid transparent;}
   .nav-links a:hover{opacity:1; border-bottom-color:currentColor;}
   .nav-links .cta{border:1px solid rgba(244,239,225,0.4); padding:9px 18px; font-size:0.8rem;}
-  .nav-links .cta:hover{background:var(--ivory); color:var(--holly); border-color:var(--ivory);}
+  .nav-links .cta:hover{background:var(--ivory); color:var(--espresso); border-color:var(--ivory);}
   @media (max-width:880px){.nav-links a:not(.cta){display:none;}}
 
   /* ---------- HERO ---------- */
-  .hero{position:relative; overflow:hidden; height:100svh; min-height:640px; display:flex; flex-direction:column; justify-content:flex-end; color:#fff; background:var(--holly);}
+  .hero{position:relative; overflow:hidden; height:100svh; min-height:640px; display:flex; flex-direction:column; justify-content:flex-end; color:#fff; background:var(--espresso);}
   .hero-fade{
     position:absolute; inset:0; z-index:1;
-    background:linear-gradient(180deg, rgba(16,31,22,0.2) 0%, rgba(16,31,22,0.02) 32%, rgba(16,31,22,0.55) 74%, rgba(16,31,22,0.92) 100%);
+    background:linear-gradient(180deg, rgba(24,20,15,0.2) 0%, rgba(24,20,15,0.02) 32%, rgba(24,20,15,0.55) 74%, rgba(24,20,15,0.92) 100%);
   }
   .hero-content{position:relative; z-index:2; padding:0 56px 88px;}
   @media (max-width:760px){.hero-content{padding:0 24px 60px;}}
@@ -121,7 +121,7 @@
   .intro-statement{padding:96px 0 110px;}
   .intro-statement h2{font-size:clamp(1.8rem,3.6vw,2.8rem); max-width:22ch; line-height:1.28; font-weight:500;}
   .intro-body{margin-top:50px; display:grid; grid-template-columns:repeat(3,1fr); gap:44px;}
-  .intro-body p{font-size:0.98rem; line-height:1.85; color:#26291f;}
+  .intro-body p{font-size:0.98rem; line-height:1.85; color:#2a2620;}
   @media (max-width:860px){.intro-body{grid-template-columns:1fr; gap:28px;} .intro-statement{padding:70px 0 80px;}}
 
   /* ---------- PROVENANCE (architect's rendering + award) ---------- */
@@ -129,7 +129,7 @@
   .prov-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:70px; align-items:start;}
   @media (max-width:860px){.prov-grid{grid-template-columns:1fr; gap:40px;} .provenance{padding:80px 0 90px;}}
   .provenance h2{font-size:clamp(1.7rem,3vw,2.3rem); margin:14px 0 24px; font-weight:500; max-width:20ch;}
-  .provenance p{font-size:0.98rem; line-height:1.9; color:#26291f; max-width:60ch;}
+  .provenance p{font-size:0.98rem; line-height:1.9; color:#2a2620; max-width:60ch;}
   .prov-stair{margin-top:34px; display:flex; gap:18px; align-items:flex-start; max-width:60ch;}
   .prov-stair img{width:150px; height:112px; object-fit:cover; border:1px solid var(--line-l); flex-shrink:0;}
   .prov-stair-cap{font-size:0.86rem; color:var(--stone); line-height:1.7; padding-top:4px;}
@@ -170,7 +170,7 @@
   .film-cap .plate-name{margin-top:0;}
 
   /* ---------- PARTICULARS (specs) ---------- */
-  .particulars{background:var(--holly); color:var(--ivory); padding:120px 0;}
+  .particulars{background:var(--espresso); color:var(--ivory); padding:120px 0;}
   .particulars-head{display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:14px; flex-wrap:wrap; gap:16px;}
   .particulars-head h2{font-size:clamp(1.7rem,3vw,2.3rem); font-weight:500;}
   .particulars-head .label{color:var(--ivory-2); opacity:0.7;}
@@ -186,7 +186,7 @@
   .n-grid{display:grid; grid-template-columns:1.1fr 0.7fr; gap:70px; align-items:start;}
   @media (max-width:860px){.n-grid{grid-template-columns:1fr; gap:40px;} .neighborhood{padding:90px 0;}}
   .neighborhood h2{font-size:clamp(1.7rem,3vw,2.3rem); margin-bottom:22px; font-weight:500;}
-  .neighborhood p{font-size:0.98rem; line-height:1.9; color:#26291f; margin-bottom:16px; max-width:56ch;}
+  .neighborhood p{font-size:0.98rem; line-height:1.9; color:#2a2620; margin-bottom:16px; max-width:56ch;}
   .n-facts{display:grid; grid-template-columns:1fr 1fr; gap:20px 32px; margin-top:30px;}
   .n-facts .label{margin-bottom:6px;}
   .n-facts .val{font-family:'Lora',serif; font-size:1.02rem;}
@@ -196,7 +196,7 @@
   .locator img{width:100%; height:auto; display:block;}
 
   /* ---------- INQUIRE ---------- */
-  .inquire{background:var(--holly); color:var(--ivory); padding:130px 0 100px;}
+  .inquire{background:var(--espresso); color:var(--ivory); padding:130px 0 100px;}
   .inquire-grid{display:grid; grid-template-columns:1fr 1fr; gap:84px;}
   @media (max-width:900px){.inquire-grid{grid-template-columns:1fr; gap:50px;} .inquire{padding:100px 0 76px;}}
   .inquire h2{font-size:clamp(1.9rem,3.3vw,2.5rem); max-width:14ch; margin-bottom:22px; font-weight:500;}
@@ -221,7 +221,7 @@
   .row2{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
   @media (max-width:520px){.row2{grid-template-columns:1fr;}}
   .submit-btn{
-    margin-top:10px; align-self:flex-start; background:var(--ivory); color:var(--holly); border:none;
+    margin-top:10px; align-self:flex-start; background:var(--ivory); color:var(--espresso); border:none;
     padding:14px 32px; font-family:'Lora',serif; font-size:1rem; font-style:italic;
     cursor:pointer; transition:background .25s ease;
   }
@@ -230,7 +230,7 @@
   .success-msg{display:none; padding:26px 28px; border:1px solid rgba(156,122,53,0.5); font-family:'Lora',serif; font-style:italic; font-size:1.05rem;}
   .success-msg.show{display:block;}
 
-  footer{background:var(--holly-deep); color:var(--stone); padding:40px 0;}
+  footer{background:var(--espresso-deep); color:var(--stone); padding:40px 0;}
   .footer-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; font-size:0.78rem;}
 </style>
 </head>
@@ -253,7 +253,7 @@
 
 <!-- ================= HERO ================= -->
 <section class="hero">
-  <img class="hero-img" src="images/Print_03.jpg" alt="Glassbridge, street elevation, 421 2nd St W, Kirkland">
+  <img class="hero-img" src="images/hero-exterior.jpg" alt="Glassbridge, street elevation, 421 2nd St W, Kirkland">
   <div class="hero-fade"></div>
   <div class="hero-content">
     <div class="label reveal">West of Market, Kirkland, WA</div>
@@ -305,15 +305,15 @@
   <div class="wrap">
     <div class="gallery-head reveal">
       <h2>Gallery</h2>
-      <div class="note">Sequence shown here. Final selects to be confirmed ahead of launch.</div>
+      <div class="note">A selection from the full photography set.</div>
     </div>
     <div class="plate-grid">
       <div class="plate reveal">
         <div class="plate-frame"><div class="fpo"><img src="images/great-room.jpg" alt="Great room, Glassbridge"></div></div>
-        <div class="plate-cap"><div class="plate-num">01</div><div class="plate-name">Great room, lake view</div></div>
+        <div class="plate-cap"><div class="plate-num">01</div><div class="plate-name">Great room</div></div>
       </div>
       <div class="plate reveal">
-        <div class="plate-frame"><div class="fpo"><img src="images/Print_03.jpg" alt="Exterior, street elevation, Glassbridge"></div></div>
+        <div class="plate-frame"><div class="fpo"><img src="images/exterior-alt.jpg" alt="Exterior, street elevation, Glassbridge"></div></div>
         <div class="plate-cap"><div class="plate-num">02</div><div class="plate-name">Exterior, street elevation</div></div>
       </div>
       <div class="plate small reveal">
@@ -321,12 +321,12 @@
         <div class="plate-cap"><div class="plate-num">03</div><div class="plate-name">Kitchen</div></div>
       </div>
       <div class="plate small reveal">
-        <div class="plate-frame"><div class="fpo"><img src="images/living-room.jpg" alt="Living room and fireplace, Glassbridge"></div></div>
-        <div class="plate-cap"><div class="plate-num">04</div><div class="plate-name">Living room &amp; fireplace</div></div>
+        <div class="plate-frame"><div class="fpo"><img src="images/primary-suite.jpg" alt="Primary suite, Glassbridge"></div></div>
+        <div class="plate-cap"><div class="plate-num">04</div><div class="plate-name">Primary suite</div></div>
       </div>
       <div class="plate small reveal">
-        <div class="plate-frame"><div class="fpo"><img src="images/terrace-dusk.jpg" alt="Terrace at dusk, Glassbridge"></div></div>
-        <div class="plate-cap"><div class="plate-num">05</div><div class="plate-name">Terrace at dusk</div></div>
+        <div class="plate-frame"><div class="fpo"><img src="images/terrace.jpg" alt="Terrace, Glassbridge"></div></div>
+        <div class="plate-cap"><div class="plate-num">05</div><div class="plate-name">Terrace</div></div>
       </div>
     </div>
   </div>
