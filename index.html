@@ -20,7 +20,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <style>
   :root{
     --espresso:#2b2420;
@@ -37,7 +37,7 @@
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
-  body{background:var(--ivory); color:var(--ink); font-family:'Public Sans',sans-serif; font-weight:400;}
+  body{background:var(--ivory); color:var(--ink); font-family:'Lora',serif; font-weight:400;}
   @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto;} *{animation-duration:.01ms !important; transition-duration:.01ms !important;}}
   ::selection{background:var(--espresso); color:var(--ivory);}
 
@@ -65,7 +65,7 @@
   .fpo .crop.br{bottom:12px; right:12px; transform:scale(-1,-1);}
   .fpo-tag{
     position:absolute; bottom:12px; left:30px; z-index:2;
-    font-family:'Public Sans',sans-serif; font-size:0.68rem;
+    font-family:'Lora',serif; font-size:0.68rem;
     color:var(--ivory-2); opacity:0.55;
   }
   .fpo img{width:100%; height:100%; object-fit:cover; display:block;}
@@ -218,7 +218,7 @@
   .field label{font-size:0.78rem; color:var(--ivory-2); opacity:0.75;}
   .field input, .field textarea{
     background:transparent; border:none; border-bottom:1px solid var(--line-d);
-    color:var(--ivory); font-family:'Public Sans',sans-serif; font-size:0.96rem; padding:10px 2px;
+    color:var(--ivory); font-family:'Lora',serif; font-size:0.96rem; padding:10px 2px;
     transition:border-color .2s ease;
   }
   .field input:focus, .field textarea:focus{outline:none; border-bottom-color:var(--brass-2);}
