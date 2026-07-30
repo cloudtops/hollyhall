@@ -155,20 +155,6 @@
     .plate, .plate.small{grid-column:span 2;}
   }
 
-  /* ---------- FILM / VIDEO ---------- */
-  .film{background:var(--ivory); padding:0 0 120px;}
-  .film-inner{border:1px solid var(--line-l); padding:14px; background:#fffdf6;}
-  .film .fpo{aspect-ratio:21/9;}
-  .film-play{
-    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:2;
-    width:64px; height:64px; border:1px solid rgba(244,239,225,0.6); border-radius:50%;
-    display:flex; align-items:center; justify-content:center;
-  }
-  .film-play svg{width:18px; height:18px; fill:var(--ivory);}
-  .film-cap{margin-top:16px; display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px;}
-  .film-cap .plate-num{color:var(--brass);}
-  .film-cap .plate-name{margin-top:0;}
-
   /* ---------- PARTICULARS (specs) ---------- */
   .particulars{background:var(--espresso); color:var(--ivory); padding:120px 0;}
   .particulars-head{display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:14px; flex-wrap:wrap; gap:16px;}
@@ -328,25 +314,54 @@
         <div class="plate-frame"><div class="fpo"><img src="images/terrace.jpg" alt="Terrace, Glassbridge"></div></div>
         <div class="plate-cap"><div class="plate-num">05</div><div class="plate-name">Terrace</div></div>
       </div>
+      <div class="plate small reveal">
+        <div class="plate-frame"><div class="fpo"><img src="images/kitchen-alt.jpg" alt="Kitchen, alternate view, Glassbridge"></div></div>
+        <div class="plate-cap"><div class="plate-num">06</div><div class="plate-name">Kitchen, another view</div></div>
+      </div>
+      <div class="plate small reveal">
+        <div class="plate-frame"><div class="fpo"><img src="images/dining-room.jpg" alt="Dining room, Glassbridge"></div></div>
+        <div class="plate-cap"><div class="plate-num">07</div><div class="plate-name">Dining room</div></div>
+      </div>
+      <div class="plate small reveal">
+        <div class="plate-frame"><div class="fpo"><img src="images/bedroom.jpg" alt="Bedroom, Glassbridge"></div></div>
+        <div class="plate-cap"><div class="plate-num">08</div><div class="plate-name">Bedroom</div></div>
+      </div>
+      <div class="plate small reveal">
+        <div class="plate-frame"><div class="fpo"><img src="images/bathroom.jpg" alt="Bathroom, Glassbridge"></div></div>
+        <div class="plate-cap"><div class="plate-num">09</div><div class="plate-name">Bathroom</div></div>
+      </div>
+      <div class="plate small reveal">
+        <div class="plate-frame"><div class="fpo"><img src="images/glass-bridge.jpg" alt="The fan-shaped glass bridge, Glassbridge"></div></div>
+        <div class="plate-cap"><div class="plate-num">10</div><div class="plate-name">The glass bridge</div></div>
+      </div>
+      <div class="plate small reveal">
+        <div class="plate-frame"><div class="fpo"><img src="images/elevator.jpg" alt="Elevator, Glassbridge"></div></div>
+        <div class="plate-cap"><div class="plate-num">11</div><div class="plate-name">Elevator</div></div>
+      </div>
+      <div class="plate small reveal">
+        <div class="plate-frame"><div class="fpo"><img src="images/bonus-room.jpg" alt="Bonus room, Glassbridge"></div></div>
+        <div class="plate-cap"><div class="plate-num">12</div><div class="plate-name">Bonus room</div></div>
+      </div>
+      <div class="plate small reveal">
+        <div class="plate-frame"><div class="fpo"><img src="images/backyard.jpg" alt="Backyard patio, Glassbridge"></div></div>
+        <div class="plate-cap"><div class="plate-num">13</div><div class="plate-name">Backyard patio</div></div>
+      </div>
+      <div class="plate small reveal">
+        <div class="plate-frame"><div class="fpo"><img src="images/porch.jpg" alt="Front porch, Glassbridge"></div></div>
+        <div class="plate-cap"><div class="plate-num">14</div><div class="plate-name">Front porch</div></div>
+      </div>
+      <div class="plate reveal">
+        <div class="plate-frame"><div class="fpo"><img src="images/stair-landing.jpg" alt="Glass stair from the upper landing, Glassbridge"></div></div>
+        <div class="plate-cap"><div class="plate-num">15</div><div class="plate-name">The glass stair, from above</div></div>
+      </div>
+      <div class="plate reveal">
+        <div class="plate-frame"><div class="fpo"><img src="images/aerial-close.jpg" alt="Aerial view, Glassbridge"></div></div>
+        <div class="plate-cap"><div class="plate-num">16</div><div class="plate-name">Aerial view</div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= FILM ================= -->
-<section class="film">
-  <div class="wrap">
-    <div class="film-inner reveal">
-      <div class="fpo" style="position:relative;">
-        <span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span>
-        <span class="fpo-tag">FPO · property film pending</span>
-        <div class="film-play"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8V4z"/></svg></div>
-      </div>
-      <div class="film-cap">
-        <div><div class="plate-num">06</div><div class="plate-name">Property film</div></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ================= PARTICULARS ================= -->
 <section class="particulars" id="particulars">
